@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Signup page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Cinzel:wght@400..900&family=Jersey+10&family=Luckiest+Guy&family=Pacifico&family=Permanent+Marker&family=Sixtyfour&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="logo1.jpeg" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="signup.css">
+  </head>
+  <body>
+    <div class="Home">
+      <a href="index.html"
+        ><img src="logo1.jpeg" alt="Logo" width="85px" height="70px"
+      /></a>
+      <a href="index.html"
+        ><h2 class="log-h2">
+          Bhankas Learn<span class="jersey-10-regular">0.2</span>
+        </h2></a
+      >
+    </div>
+    <div class="container">
+      <h5>Create your account</h5>
+      <p>Start your learning journey today</p>
+      <form id="signupform"> <!--get single button js-->
+        <div class="mb-3">
+          <label for="phone">Phone Number</label>
+          <div class="phone-wrapper">
+            <div class="prefix">
+              <span>IN</span>
+              <span>+91</span>
+            </div>
+            <div class="divider"></div>
+            <input type="tel" id="uphone" name="phone" placeholder="9892142014" pattern="[6-9]{1}[0-9]{9}" maxlength="10" required/>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">First Name:</label>
+          <input type="name" id="ufname" class="form-control" required placeholder="Rocky"/>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Last Name:</label>
+          <input type="name" id="ulname" class="form-control" required placeholder="Deo"/>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Email Address:</label>
+          <input type="email" id="uemail" class="form-control" required placeholder="Rockydeo@89gmail.com"/>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Password:</label>
+          <input type="password" id="upass" class="form-control" required placeholder="Enter your password"/>
+        </div>
+        <p class="p-required">Password requirements:<strong>?</strong></p>
+        <div class="mb-3">
+          <label class="form-label">Confirm Password:</label>
+          <input type="password" id="ucpass" class="form-control" required placeholder="Confirm your password"/>
+        </div>
+        
+        <a href="signup.html"
+          ><button type="submit" value="submit" class="signup">Submit</button></a>
+        <p class="mt-3">
+          Already have an account?<a href="login.html" class="sup">Sign in</a>
+        </p>
+        <p class="policy mt-3">By creating an account, you agree to our Terms of Service and</p>
+        <p class="policy1 mt-1">Privacy Policy.</p>
+
+        <a href="index.html" class="Bhankas"><p>&lt; Back to Bhankas Learn</p></a>
+      </form>
+    </div>
+
+    <!-- footer sec -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!--Brand Section -->
+        <div class="footer-brand">
+          <img src="logo1.jpeg" alt="Bhankas Learn Logo" />
+          <h3>Bhankas Learn</h3>
+          <p>
+            Master video editing skills with our comprehensive courses designed
+            for beginners to professionals.
+          </p>
+        </div>
+
+        <!--Contact Section -->
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>
+            <i class="bi bi-geo-alt"></i><span> </span>Pune, Maharashtra, India
+          </p>
+          <a href="98921 42014"
+            ><i class="bi bi-telephone"></i><span> </span>+91 98921 42014</a
+          ><br />
+          <a href="bhankaslearn@gmail.com"
+            ><i class="bi bi-envelope"><span> </span></i
+            >bhankaslearn@gmail.com</a
+          >
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!--Social Media -->
+        <div class="footer-social">
+          <h4>Connect with Us</h4>
+          <div class="social-icons">
+            <a href="#" title="YouTube"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+                alt="YouTube"
+            /></a>
+            <a href="#" title="LinkedIn"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+                alt="LinkedIn"
+            /></a>
+            <a href="#" title="Instagram"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+                alt="Instagram"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 Bhankas Learn. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+        document.getElementById("signupform").addEventListener("submit",function(event)
+      {
+        event.preventDefault();
+        let uphone=document.getElementById("uphone").value;
+        let ufname=document.getElementById("ufname").value;
+        let ulname=document.getElementById("ulname").value;
+        let uemail=document.getElementById("uemail").value;
+        let upass=document.getElementById("upass").value;
+        let ucpass=document.getElementById("ucpass").value;
+        console.log(uphone, ufname, ulname, uemail, upass, ucpass);
+        if(upass===ucpass)
+        {
+          localStorage.setItem("uphone",uphone);
+          localStorage.setItem("ufname",ufname);
+          localStorage.setItem("ulname",ulname);
+          localStorage.setItem("uemail",uemail);
+          localStorage.setItem("upass",upass);
+          alert("Your Registration Sucessfully Done..!!");
+          window.location.href="login.html"
+        }
+        else
+        {
+          alert("Password And Confirm Password doesn't match Try Again!");
+        }
+      })
+    </script>
+  </body>
+</html>

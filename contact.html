@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us -Bhankas Learn</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background:#fff;
+      font-family: "Georgia", serif;
+      color: #222;
+      text-align: center;
+    }
+    
+    .wrapper {
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    a{
+      text-decoration: none;
+      color: #000;
+    }
+    .logo-img {
+      width: 70px;
+      margin-bottom: 10px;
+      margin-right: 25px;
+    }
+
+    .brand {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 40px;
+      font-family: "Georgia", serif;
+    }
+
+    .contact-title {
+      font-size: 60px;
+      font-family: "Brush Script MT", cursive;
+      margin: 30px 0 40px;
+      color: #000;
+    }
+
+    .info-block {
+      margin: 25px 0;
+      font-size: 18px;
+    }
+
+    .info-icon {
+      font-size: 22px;
+      margin-right: 10px;
+    }
+
+    .line {
+      width: 80%;
+      height: 1px;
+      background: #ccc;
+      margin: 20px auto;
+    }
+
+    /* MESSAGE FORM */
+    form {
+      margin-top: 30px;
+      text-align: left;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background: #fff;
+      font-family: "Georgia", serif;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #000;
+      color: #fff;
+      font-size: 18px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #444;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <!-- Logo -->
+    <a href="index.html"><img src="logo1.jpeg" alt="" class="logo-img">
+    <div class="brand">Bhankas Learn</div></a>
+    <!-- Title -->
+    <div class="contact-title">Contact Us</div>
+
+    <!-- Address -->
+    <div class="info-block">
+      <span class="info-icon">📍</span>
+      Pune, Maharashtra, India
+    </div>
+    <div class="line"></div>
+
+    <!-- Phone -->
+    <div class="info-block">
+      <span class="info-icon">📞</span>
+      +91 98921 42014
+    </div>
+    <div class="line"></div>
+
+    <!-- Email -->
+    <div class="info-block">
+      <span class="info-icon">✉️</span>
+      bhankaslearn@gmail.com
+    </div>
+    <div class="line"></div>
+
+
+    <!-- MESSAGE FORM -->
+    <h2 style="font-family:Georgia; margin-bottom:10px; font-size:26px;">Send us a Message</h2>
+
+    <form action="#">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+  </div>
+
+</body>
+</html>

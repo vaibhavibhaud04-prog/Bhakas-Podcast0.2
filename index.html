@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bhankas Learner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="icon" href="logo1.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      /* Mentor's section */
+      .container{
+  max-width: 1300px;
+  margin: auto;
+  padding: 50px 20px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+    </style>
+  </head>
+  <body>
+    <!-- navbar sec -->
+     <header class="navbar">
+    <div class="nav-left">
+      <img src="logo1.jpeg" alt="Logo">
+      <h2>Bhankas Learn<span class="jersey-10-regular">0.2</span></h2>
+    </div>
+    <nav class="nav-right">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Log in</a>
+      <a href="signUp.html"><button class="signup-btn">Sign Up</button></a>
+    </nav>
+  </header>
+    <!-- Master sec -->
+     <main>
+    <div class="hero-section">
+    <div class="language-tag" id="languageTag">🟠 Available in English</div>
+
+    <h1 class="headline">
+      <span class="hindi-text">मास्टर</span>
+      <span class="highlight-text">skills that</span><br>
+      <span class="transform-text" id="dynamicText">transform</span>
+      <span class="highlight">careers</span>
+    </h1>
+
+    <p class="subtext">
+      Learn from an industry expert with our comprehensive courses
+      designed for beginners to professionals.
+    </p>
+    
+    <button class="browse-btn">Browse Courses</button>
+  
+    <div class="students">
+      <div class="stu">
+        <img src="img1.jpeg" alt="Student">
+        <img src="img2.jpeg" alt="Student" height="30px">
+        <img src="img3.jpeg" alt="Student">
+      </div>
+      <p><strong>100+</strong> Students enrolled</p>
+    </div>
+  </div>
+  <div>
+
+  </div>
+  </main>
+
+
+    <!-- skills -->
+     <!-- Master Content create sec -->
+<section id="about" class="skills-section">
+  <div class="skills-header">
+    <span class="skills-tag">● SKILLS</span>
+    <h2>Master Content Creation, Storytelling and Algorithms</h2>
+    <p>
+      Learn the modern content playbook: craft compelling narratives,
+      build for platform algorithms, and create consistent, high-performing content.
+    </p>
+  </div>
+
+  <div class="skills-cards">
+    <!-- Card 1 -->
+    <div class="skill-card">
+      <div class="icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712107.png" alt="Storytelling">
+      </div>
+      <h3>Storytelling</h3>
+      <p>
+        Craft compelling narratives that hook viewers from the first second.
+      </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="skill-card">
+      <div class="icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922629.png" alt="AI">
+      </div>
+      <h3>AI</h3>
+      <p>
+        Use AI tools to speed up edits, ideation and workflows.
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="skill-card">
+      <div class="icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712107.png" alt="Algorithm">
+      </div>
+      <h3>Algorithm</h3>
+      <p>
+        Optimize content for platform algorithms to maximize reach.
+      </p>
+    </div>
+  </div>
+</section>
+
+    <!-- Work section -->
+<section class="work-section">
+  <div class="work-header">
+    <span class="work-h1">● WORK</span>
+    <h2>Explore our storytelling and content projects</h2>
+  </div>  
+
+
+  <div class="card-container">
+    <div class="card">
+      <div class="card-video">
+        <video src="video1.mp4" autoplay muted loop playsinline></video>
+        <div class="overlay"></div>
+      </div>
+      <div class="card-content">
+        <h3>Confidence & Career Guidance</h3>
+        <p>Crafting impactful videos with creative editing, smooth transitions, and engaging narratives.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-video">
+        <video src="video2.mp4" autoplay muted loop playsinline></video>
+        <div class="overlay"></div>
+      </div>
+      <div class="card-content">
+        <h3>Get ready to go viral</h3>
+        <p>Eye-catching edits, cinematic visuals, and impactful storytelling designed to capture attention and boost your reach.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-video">
+        <video src="video3.mp4" autoplay muted loop playsinline></video>
+        <div class="overlay"></div>
+      </div>
+      <div class="card-content">
+        <h3>Creative Storytelling</h3>
+        <p>Creative storytelling through innovative editing techniques and dynamic visual compositions.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+    <!--Mentor section -->
+<section class="container">
+  <!-- IMAGES -->
+  <div class="slider">
+    <img src="m11.png" class="slide-img active">
+    <img src="m12.png" class="slide-img">
+    <img src="m13.png" class="slide-img">
+    <img src="m14.png" class="slide-img">
+
+    <button class="btn" id="prevBtn">&lt;</button>
+    <button class="btn" id="nextBtn">&gt;</button>
+  </div>
+
+  <!-- CONTENT -->
+   <div class="content-area">
+    <div class="title">Meet your Mentor</div>
+    <p>
+      Ricky is a passionate video editor and content creator who founded Bhankas Media,a creative agency focused on delivering high-quality video content and editing services.
+    </p>
+    <p>
+      He has helped numerous creators and businesses transform their raw footage into compelling visual stories that engage and inspire audiences.
+    </p>
+    <p>
+      His expertise spans basic editing to advanced visual effects, color grading, and storytelling techniques that make videos stand out in today’s competitive digital landscape.
+    </p>
+    <div class="stats">
+      <a href="http://www.youtube.com" target="_self" class="item">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
+      <div style="font-size: 30px;"><strong>200k+</strong><br>Subscribers</div></a>
+
+      <a href="http://www.Instagram.com" target="_self" class="item">
+      <img src="https://cdn-icons-png.flaticon.com/512/1409/1409946.png">
+      <div style="font-size: 30px;"><strong>300k+</strong><br>followers</div></a>
+    </div>
+   </div>
+</section>
+
+     
+    <!-- testimonial -->
+<section class="testimonial-section">
+      <div class="testimonial-header">
+        <span class="skills-tag">● TESTIMONIAL</span>
+        <h1 class="heading">Success Stories from Our Students</h1>
+        <p>Real results from real learners who started just like you</p>
+      </div>
+
+      <!-- Cards -->
+      <div class="testimonial-wrap">
+        <div class="testimonial-track">
+          <!-- card-1 -->
+          <div class="testimonials-card">
+            <div class="star">★★★★★</div>
+            <p>
+              "Before this course, I was totally confused about editing and
+              shooting. The step by step lessons made everything clear. My
+              followers grew from 1.5K to 10K quickly."
+            </p>
+            <div class="profiles">
+              <img src="sayali.jpg" />
+              <div class="profiles-info">
+                <strong>Sayali Shinde</strong>
+                Advocate
+              </div>
+            </div>
+          </div>
+
+          <!-- card-2 -->
+            <div class="testimonials-card">
+            <div class="star">★★★★★</div>
+            <p>
+              "Earlier, my videos felt flat and boring. After taking this course,  
+            I finally understood storytelling and editing. Now my engagement is on another level."
+            </p>
+            <div class="profiles">
+              <img src="mitesh.jpg" />
+              <div class="profiles-info">
+                <strong>Mitesh Bhosale</strong>
+                Student
+              </div>
+            </div>
+          </div>
+
+          <!-- card-3 -->
+            <div class="testimonials-card">
+            <div class="star">★★★★★</div>
+            <p>
+              "Before this course, I was totally confused about editing and
+              shooting. The step by step lessons made everything clear. My
+              followers grew from 1.5K to 10K quickly."
+            </p>
+            <div class="profiles">
+              <img src="siddhant.jpg" />
+              <div class="profiles-info">
+                <strong>Siddhant Varpe</strong>
+                Engineer
+              </div>
+            </div>
+          </div>
+
+          <!-- card-4 -->
+            <div class="testimonials-card">
+            <div class="star">★★★★★</div>
+            <p>
+             "I joined this course out of curiosity, but it turned out to be a game changer.  
+            I never thought I could create content people actually love."
+            </p>
+            <div class="profiles">
+              <img src="sonali.jpg" />
+              <div class="profiles-info">
+                <strong>Sonali Bhaud</strong>
+                Artist
+              </div>
+            </div>
+          </div>
+
+          <!-- card-5 -->
+            <div class="testimonials-card">
+            <div class="star">★★★★★</div>
+            <p>
+              "I joined this course out of curiosity,but it turned out to be game changer.I never thought I could create content people actually connect with.algorithm tips helped me grow fast"
+            </p>
+            <div class="profiles">
+              <img src="prashant.jpg" />
+              <div class="profiles-info">
+                <strong>Prashant Palkar</strong>
+                Content Creator
+              </div>
+            </div>
+          </div>
+
+          <!-- card-4 -->
+            <div class="testimonials-card">
+            <div class="star">★★★★★</div>
+            <p>
+             "I joined this course out of curiosity, but it turned out to be a game changer.  
+            I never thought I could create content people actually love."
+            </p>
+            <div class="profiles">
+              <img src="Shailesh.jpg" />
+              <div class="profiles-info">
+                <strong>Shailesh Shinde</strong>
+                Video Editor
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- footer sec -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!--Brand Section -->
+    <div class="footer-brand">
+      <img src="logo1.jpeg" alt="Bhankas Learn Logo">
+      <h3>Bhankas Learn</h3>
+      <p>Master video editing skills with our comprehensive courses designed for beginners to professionals.</p>
+    </div>
+
+    <!--Contact Section -->
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p><i class="bi bi-geo-alt"></i><span> </span>Pune, Maharashtra, India</p>
+      <a href="98921 42014"><i class="bi bi-telephone"></i><span> </span>+91 98921 42014</a><br>
+      <a href="bhankaslearn@gmail.com"><i class="bi bi-envelope"><span> </span></i>bhankaslearn@gmail.com</a>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#index.html">Home</a></li>
+        <li><a href="#about.html">About</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!--Social Media -->
+    <div class="footer-social">
+      <h4>Connect with Us</h4>
+      <div class="social-icons">
+        <a href="#" title="YouTube"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+        <a href="#" title="LinkedIn"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+        <a href="#" title="Instagram"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Bhankas Learn. All rights reserved.</p>
+  </div>
+</footer>
+
+    <script>
+      const slides = document.querySelectorAll(".slide-img");
+    let index = 0;
+
+    function showSlide(i) {
+        slides.forEach(slide => slide.classList.remove("active"));
+        slides[i].classList.add("active");
+    }
+
+    document.getElementById("nextBtn").onclick = () => {
+        index = (index + 1) % slides.length;
+        showSlide(index);
+    };
+
+    document.getElementById("prevBtn").onclick = () => {
+        index = (index - 1 + slides.length) % slides.length;
+        showSlide(index);
+    };
+
+    // Auto change every 2 minutes
+    setInterval(() => {
+        index = (index + 1) % slides.length;
+        showSlide(index);
+    }, 3000);
+    </script>
+  </body>
+</html>
