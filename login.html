@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Bungee&family=Cinzel:wght@400..900&family=Jersey+10&family=Luckiest+Guy&family=Pacifico&family=Permanent+Marker&family=Sixtyfour&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="logo1.jpeg" />
+    <link rel="icon" href="Photos/logo1.jpeg" />
     <link rel="stylesheet" href="login.css" />
     <link rel="stylesheet" href="style.css" />
     <style>
@@ -38,7 +38,7 @@
   <body>
     <div class="Home">
       <a href="index.html"
-        ><img src="logo1.jpeg" alt="Logo" width="85px" height="70px"
+        ><img src="Photos/logo1.jpeg" alt="Logo" width="85px" height="70px"
       /></a>
       <a href="index.html"
         ><h2 class="log-h2">
@@ -82,7 +82,7 @@
       <div class="footer-container">
         <!--Brand Section -->
         <div class="footer-brand">
-          <img src="logo1.jpeg" alt="Bhankas Learn Logo" />
+          <img src="Photos/logo1.jpeg" alt="Bhankas Learn Logo" />
           <h3>Bhankas Learn</h3>
           <p>
             Master video editing skills with our comprehensive courses designed
@@ -144,27 +144,24 @@
       </div>
     </footer>
 
-    <script>
-        document.getElementById("loginform").addEventListener("submit",function(event)
-      {
-        event.preventDefault();
-        let uphone=document.getElementById("uphone").value;
-        let upass=document.getElementById("upass").value;
-        console.log(uphone, upass);
+   <script>
+  document.getElementById("loginform").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    let uphone = document.getElementById("uphone").value;
+    let upass = document.getElementById("upass").value;
 
-        let store_uphone=localStorage.getItem("uphone");
-        let store_upass=localStorage.getItem("upass");
-        console.log(store_uphone, store_upass);
-        if(uphone===store_uphone, upass===store_upass)
-        {
-          alert("Login successfully!!!");
-          window.location.href="logout.html"
-        }
-        else
-        {
-          alert("Login Failed! Please check phone no and password.")
-        }
-      })
-    </script>
+    let store_uphone = localStorage.getItem("uphone");
+    let store_upass = localStorage.getItem("upass");
+
+    // Corrected logic: Use && (AND) instead of a comma
+    if(uphone === store_uphone && upass === store_upass){
+      alert("Login successful!!!");
+      window.location.href = "logout.html";
+    } else {
+      alert("Login Failed! Please check phone number and password.");
+    }
+  });
+</script>
   </body>
 </html>

@@ -55,3 +55,63 @@ h5{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10px;
 }
+
+/* --- RESPONSIVE ADJUSTMENTS --- */
+
+@media (max-width: 992px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        max-width: 470px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        height: auto; /* Allows container to grow with content */
+        padding-bottom: 30px;
+    }
+
+    h5 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .container p {
+        text-align: center;
+    }
+
+    .signup {
+        padding: 10px 0; /* Removes the fixed 195px side padding */
+        width: 100%;    /* Makes button full width of the container */
+    }
+
+    .p-required {
+        margin-right: 0;
+        display: block;
+        text-align: left;
+    }
+
+    .policy, .policy1 {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .Home {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .log-h2 {
+        font-size: 1.2rem;
+    }
+
+    .phone-wrapper {
+        flex-wrap: wrap; /* Prevents phone prefix from squishing */
+    }
+}
